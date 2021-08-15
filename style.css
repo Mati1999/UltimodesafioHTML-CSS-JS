@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Space Mono', monospace;
+    background: hsl(185, 41%, 84%);
+    font-size: 14px;
+}
+
+/*   CONTAINER FLUID   */
+
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.logo{
+    width: 100%;
+    margin: 2.5rem 0;
+}
+
+/*   CALCULADORA   */
+
+.calculadora{
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/*   BILL   */
+
+.calculadora__bill h5{
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(186, 14%, 43%);
+}
+
+.monto{
+    background: hsl(189, 41%, 97%);
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .4rem;
+    padding: 0 1rem;
+}
+
+.monto::before{
+    content: url(images/icon-dollar.svg);
+}
+
+.monto input{
+    background: none;
+    border: none;
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+    font-size: 1.5rem;
+    font-weight: 700;
+    outline: none;
+}
+
+
+.monto input:focus{
+    border: 1px solid hsl(172, 67%, 45%);
+    border-radius: .4rem;
+}
+
+/*   TIP   */
+
+.calculadora__tip{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.calculadora__tip h5{
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(186, 14%, 43%);
+}
+
+.calculadora__tip div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.calculadora__tip div > button{
+    background: hsl(183, 100%, 15%);
+    font-size: 1.6em;
+    font-weight: 700;
+    border-radius: .3rem;
+    color: hsl(189, 41%, 97%);
+    border: none;
+    width: 45%;
+    height: 3rem;
+}
+
+.calculadora__tip div > button:hover{
+    background: hsl(173, 67%, 71%);
+    color: hsl(183, 100%, 15%);
+}
+
+.calculadora__tip div > input{
+    background: hsl(189, 41%, 97%);
+    text-align: right;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: .3rem;
+    width: 45%;
+    padding: .5rem;
+    outline: none;
+}
+
+.calculadora__tip div > input:focus{
+    border: 1px solid hsl(172, 67%, 45%);
+    border-radius: .3rem;
+}
+
+.calculadora__tip div > input::placeholder{
+    color: hsl(186, 14%, 43%);
+}
+
+/*   PEOPLE   */
+
+.calculadora__people{
+    margin-top: 2rem;
+}
+
+.calculadora__people h5{
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(186, 14%, 43%);
+}
+
+.personas{
+    background: hsl(189, 41%, 97%);
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: .4rem;
+    padding: 0 1rem;
+}
+
+.personas input{
+    background: none;
+    border: none;
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+    font-size: 1.5rem;
+    font-weight: 700;
+    outline: none;
+    margin-left: .2rem;
+}
+
+.personas input:focus{
+    border: 1px solid hsl(172, 67%, 45%);
+    border-radius: .3rem;
+}
+
+/*   TOTAL   */
+
+.calculadora__total{
+    background: hsl(183, 100%, 15%);
+    padding: 2.2rem 1.2rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
+
+.total--tip, .total--final{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total--tip div > h5, .total--final div > h5{
+    color: hsl(189, 41%, 97%);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.total--tip div > p, .total--final div > p{
+color: hsl(186, 14%, 43%);
+font-size: 1rem;
+}
+
+.total--tip span, .total--final span{
+    color: hsl(172, 67%, 45%);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.calculadora__total button{
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: .3rem;
+    background: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
