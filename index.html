@@ -20,19 +20,19 @@
             <div class="calculadora__bill">
                 <h5>Bill</h5>
                 <span class="monto">
-                    <input type="number">
+                    <input type="number" id="costo">
                 </span>
             </div>
 
             <div class="calculadora__tip">
                 <h5>Select Tip %</h5>
                 <div>
-                <button>5%</button>
-                <button>10%</button>
-                <button>15%</button>
-                <button>25%</button>
-                <button>50%</button>
-                <input type="number" name="" id="" placeholder="Custom">
+                <button class="btn-tip" onclick="tipbtn(5)">5%</button>
+                <button class="btn-tip" onclick="tipbtn(10)">10%</button>
+                <button class="btn-tip" onclick="tipbtn(15)">15%</button>
+                <button class="btn-tip" onclick="tipbtn(25)">25%</button>
+                <button class="btn-tip" onclick="tipbtn(50)">50%</button>
+                <input type="number" name="" id="custom" placeholder="Custom">
                 </div>
             </div>
 
@@ -40,7 +40,7 @@
                 <h5>Number of People</h5>
                 <div class="personas">
                     <img src="images/icon-person.svg" alt="">
-                    <input type="number" name="" id="">
+                    <input type="number" name="" id="people">
                 </div>
             </div>
 
@@ -50,16 +50,16 @@
                     <h5>Tip A mount</h5>
                     <p>/ person</p>
                     </div>
-                    <span>$4.27</span>
+                    <span id="total--tip"></span>
                 </div>
                 <div class="total--final">
                     <div>
                     <h5>Total</h5>
                     <p>/ person</p>
                     </div>
-                    <span>$32.79</span>
+                    <span id="total--final"></span>
                 </div>
-                <button type="reset">RESET</button>
+                <button type="reset" id="reset">RESET</button>
             </div>
         </div>
     </div>
