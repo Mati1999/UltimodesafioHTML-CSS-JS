@@ -32,12 +32,13 @@
                 <button class="btn-tip" onclick="tipbtn(15)">15%</button>
                 <button class="btn-tip" onclick="tipbtn(25)">25%</button>
                 <button class="btn-tip" onclick="tipbtn(50)">50%</button>
-                <input type="number" name="" id="custom" placeholder="Custom">
+                <input type="number" name="" id="custom" placeholder="Custom" onkeydown="tipcustombtn()">
                 </div>
             </div>
 
             <div class="calculadora__people">
-                <h5>Number of People</h5>
+                <h5 class="peopleH5">Number of People</h5>
+                
                 <div class="personas">
                     <img src="images/icon-person.svg" alt="">
                     <input type="number" name="" id="people">
@@ -59,7 +60,7 @@
                     </div>
                     <span id="total--final"></span>
                 </div>
-                <button type="reset" id="reset">RESET</button>
+                <button type="reset" id="reset" onclick="btnreset()">RESET</button>
             </div>
         </div>
     </div>
