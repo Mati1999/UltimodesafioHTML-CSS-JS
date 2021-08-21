@@ -17,10 +17,11 @@
         </a>
 
         <div class="calculadora">
+        <div id="desk-div">
             <div class="calculadora__bill">
                 <h5>Bill</h5>
                 <span class="monto">
-                    <input type="number" id="costo">
+                    <input type="number" id="costo" placeholder="0">
                 </span>
             </div>
 
@@ -34,31 +35,31 @@
                 <button class="btn-tip" onclick="tipbtn(50)">50%</button>
                 <input type="number" name="" id="custom" placeholder="Custom" onkeydown="tipcustombtn()">
                 </div>
-            </div>
+            </div>  
 
             <div class="calculadora__people">
                 <h5 class="peopleH5">Number of People</h5>
                 
                 <div class="personas">
                     <img src="images/icon-person.svg" alt="">
-                    <input type="number" name="" id="people">
+                    <input type="number" name="" id="people" placeholder="0">
                 </div>
             </div>
-
+        </div>
             <div class="calculadora__total">
                 <div class="total--tip">
                     <div>
                     <h5>Tip A mount</h5>
                     <p>/ person</p>
                     </div>
-                    <span id="total--tip"></span>
+                    <span id="total--tip">$0.00</span>
                 </div>
                 <div class="total--final">
                     <div>
                     <h5>Total</h5>
                     <p>/ person</p>
                     </div>
-                    <span id="total--final"></span>
+                    <span id="total--final">$0.00</span>
                 </div>
                 <button type="reset" id="reset" onclick="btnreset()">RESET</button>
             </div>
