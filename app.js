@@ -37,11 +37,15 @@ function tipcustombtn() {
     const peopleValue = document.getElementById('people').value;
     const custom = document.getElementById('custom').value;
     const calculadoraH5 = document.querySelector('.peopleH5');
-
+    console.log(custom);
     if (peopleValue <= 0) {
         const calculadoraH5 = document.querySelector('.peopleH5');
         calculadoraH5.innerHTML = `Number of People <Span style="color: red; font-size: 1rem; font-weight: 700;" >Can't be zero</Span>`
         people.style.border = "1px solid red";
+        return;
+    } else if (custom <= 0 && peopleValue > 0) {
+        calculadoraH5.innerHTML = `Number of People`
+        people.style.border = "none";
         return;
     } else {
         propina = (bill * (custom / 100)) / peopleValue;
